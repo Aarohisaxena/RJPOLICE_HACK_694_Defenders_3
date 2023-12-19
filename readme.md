@@ -49,6 +49,7 @@ The proposed AI-based intelligent camera decision-making system overcomes limita
 
 ## Graphical Representation
 
+<img width="692" alt="Screenshot 2023-12-18 at 10 42 59 PM" src="https://github.com/rachit-goyal1071/RJPOLICE_HACK_694_Defenders_3/assets/119928941/f925966f-df28-4696-8161-a71ade0682ec">
 
 ---
 
