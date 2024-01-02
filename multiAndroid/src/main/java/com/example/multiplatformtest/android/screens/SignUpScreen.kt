@@ -37,7 +37,7 @@ fun SignUpScreen() {
             MyTextField(labelInput = "First Name")
             MyTextField(labelInput = "Last Name")
             MyTextField(labelInput = "Email")
-            MyTextField(labelInput = "")
+            MyTextField(labelInput = "passowrd")
         }
     }
 }
