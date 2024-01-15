@@ -1,3 +1,8 @@
+buildscript {
+    dependencies {
+        classpath("com.google.gms:google-services:4.4.0")
+    }
+}
 plugins {
     //trick: for the same plugin versions in all sub-modules
     alias(libs.plugins.androidApplication).apply(false)
