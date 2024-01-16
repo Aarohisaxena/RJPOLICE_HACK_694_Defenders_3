@@ -1,5 +1,6 @@
 package com.example.multiplatformtest.android
 
+import HomeScreen
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -12,6 +13,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            HomeScreen()
             FirebaseMessaging.getInstance().token
                 .addOnCompleteListener { task ->
                     if (!task.isSuccessful) {
@@ -24,7 +26,6 @@ class MainActivity : ComponentActivity() {
                     Log.d("newtoken", "FCM Token: $token")
                 }
 //                PoliceApp()
-            SignUpScreen()
 //            }
         }
     }
