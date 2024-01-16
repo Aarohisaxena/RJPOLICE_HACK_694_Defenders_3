@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -44,6 +45,11 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
+<<<<<<< HEAD
     implementation("androidx.compose.material3:material3:1.0.0")
+=======
+    implementation(libs.firebase.storage)
+    implementation(libs.firebase.messaging)
+>>>>>>> 49fb5f8947c00c9f13321c047eee4af99b9f7b47
     debugImplementation(libs.compose.ui.tooling)
 }
