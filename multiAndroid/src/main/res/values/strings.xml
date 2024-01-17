@@ -3,4 +3,5 @@
     <string name="Head_text">Hey there,</string>
     <string name="Create_ACC">Create an account</string>
     <string name="Welcome">Welcome Back</string>
+    <string name="title_activity_notification">notificationActivity</string>
 </resources>

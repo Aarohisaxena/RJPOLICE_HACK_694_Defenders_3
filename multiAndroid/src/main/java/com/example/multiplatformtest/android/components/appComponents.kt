@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.multiplatformtest.android.R
 import com.example.multiplatformtest.android.theme.*
+import com.example.multiplatformtest.android.theme.customColor.Primary
 
 
 @Composable

@@ -27,7 +27,7 @@ fun SignUpScreen() {
             .padding(24.dp)
     ) {
         Column {
-
+0
 //        HeadingTextComponent(value = stringResource(R.string.Head_text))
         HeadingTextComponent(value = stringResource(R.string.Create_ACC))
 
