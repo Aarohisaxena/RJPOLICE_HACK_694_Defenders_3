@@ -3,6 +3,7 @@ package com.example.multiplatformtest.android.screens
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.compose.foundation.Image
@@ -108,7 +109,7 @@ fun HospitalsList() {
                         Button(colors = ButtonDefaults.buttonColors(containerColor = customColor.Vermilion),
                             shape = RoundedCornerShape(10.dp),
                             contentPadding = PaddingValues(start = 30.dp, end = 30.dp),
-                            onClick = { /*TODO*/ }) {
+                            onClick = { openDialer(context,"7017946250") }) {
                             Icon(
                                 Icons.Default.Call,
                                 modifier = Modifier.size(20.dp),
@@ -139,13 +140,23 @@ fun HospitalsList() {
     }
 }
 
+fun openDialer(context: Context, phoneNumber: String) {
+    val u = Uri.parse("tel:$phoneNumber")
+    val intent = Intent(Intent.ACTION_DIAL, u)
+
+    try {
+        startActivity(context, intent, null)
+    } catch (e: ActivityNotFoundException) {
+        Toast.makeText(context, e.toString(), Toast.LENGTH_SHORT).show()
+    }
+}
+
 fun sendEmail(context: Context) {
     val sendIntent = Intent(Intent.ACTION_SEND).apply {
         this.putExtra(Intent.EXTRA_EMAIL, arrayOf("aarohisaxena2805@gmail.com"))
-        this.putExtra(Intent.EXTRA_SUBJECT,"Urgent Requirement from Rajasthan Police")
+        this.putExtra(Intent.EXTRA_SUBJECT, "Urgent Requirement from Rajasthan Police")
         this.putExtra(Intent.EXTRA_TEXT, "textMessage")
-        this.type =  "message/rfc822"
-
+        this.type = "message/rfc822"
     }
     try {
         startActivity(context, sendIntent, null)

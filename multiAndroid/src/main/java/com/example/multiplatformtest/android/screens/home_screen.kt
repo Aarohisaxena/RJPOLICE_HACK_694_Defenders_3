@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
@@ -83,8 +84,11 @@ fun HomeScreen() {
         Scaffold(
             topBar = {
                 TopAppBar(
-//                    modifier = Modifier.padding(top =.dp),
-                    title = { Text("RJ Police APP") },
+                    title = {
+
+                        Text("RJ Police APP")
+
+                    },
                     navigationIcon = {
                         IconButton(onClick = {
                             scope.launch {
@@ -99,8 +103,13 @@ fun HomeScreen() {
                             )
                         }
                     },
+                    actions = {
+                        IconButton(onClick = { /*TODO*/ }) {
+                            Icon(Icons.Default.ArrowForward, contentDescription = null)
+                        }
+                    }
 
-                    )
+                )
             },
 
             content = { innerPadding ->
