@@ -1,56 +1,81 @@
-# AI-Based Intelligent Camera Decision-Making System
+# AI-Based Intelligent Camera System for Enhanced Surveillance
 
 ## Problem Statement
 
-This project aims to design and implement an AI-based intelligent camera decision-making system to address challenges in traditional surveillance methods. The goal is to process video data, identify crucial events, and make real-time informed decisions. The system addresses issues such as human fatigue, delayed responses, and the need for continuous monitoring.
+Traditional surveillance relies on human operators, leading to challenges like fatigue, inefficiency, and delayed responses. Continuous tracking and security in police lockups face limitations.
 
-## Solution
+## Solution Overview
 
-### Integrating Pre-installed Security Cameras
-- A cost-effective approach leveraging existing infrastructure.
-- Upgrade camera firmware for compatibility.
-- Implement adaptive machine learning for continuous improvement.
+Develop an AI-based intelligent camera system to automate real-time video analysis, efficient decision-making, and targeted threat detection, overcoming human surveillance challenges.
 
-### Processing Real-time Video Data via Media Pipes
-- Utilizing the Mediapipe framework for face and body pose recognition, hand tracking, etc.
-- Implementing deep learning models (CNN) for object (arms) detection.
-- Object detection using OpenCV.
+## Key Features
 
-### Triggers for Suspicious Activity on Authorized Person’s Handheld Device
-- Mobile app integration for instant updates on suspicious activity.
-- Location, photo, and timestamp of the incident provided with the alert.
-- Email alerts for maintaining a record of the activity.
+- **AI-Based System:** Utilizes machine learning for automatic real-time video analysis.
+- **Advanced Algorithms:** Implements smart camera algorithms to differentiate between normal and suspicious activities.
+- **Identify Risky Items and Movements:** Detects potentially harmful objects and actions such as climbing, drilling, or suspicious interactions.
+- **Machine Learning Techniques:** Adapts and refines decision-making skills based on continuous feedback.
+- **Triggers for Suspicious Activity:** Establishes real-time triggers to identify anomalies in lockup environments.
 
-### Re-assurance in Case of Misjudged Decision
-- Photo proof sent along with the alert to avoid misjudgments.
+## Examples of Triggers
 
-## Solution Implementation
+1. Unusual movement or behavior of individuals in the lockup.
+2. Anomalies in interactions between accused individuals and law enforcement.
+3. Actions that deviate from normal behavior and might indicate potential problems.
 
-#### Hardware and Infrastructure Setup
-- High-resolution cameras for advanced video capture.
-- GPU for accelerated deep learning algorithms.
-- Multicore CPU, sufficient RAM, and high-speed storage.
-- Robust network infrastructure for seamless data transfer.
+## Real-Time Decision-Making
 
-#### Software and Technology
-- Programming Languages: Python, C++, Kotlin
-- Frameworks: TensorFlow, PyTorch, CNN, LSTM, SVM, etc.
-- Tools: OpenCV for computer vision, Mediapipe for body postures and hand tracking
-- Cloud Services: Google Cloud Platform
+The system responds promptly to suspicious triggers, enhancing security measures through quick, autonomous decision-making.
 
-#### Team Members & Responsibilities
-- **Kshitiz Agrawal:** Integration of mobile and sensors for data collection.
-- **Aarohi Saxena:** Machine Learning & Research.
-- **Rachit Goyal:** Sensors integration and IoT.
+## Autonomous Analysis
 
-## Conclusion
+The AI system autonomously examines video streams, eliminating the need for constant human intervention.
 
-The proposed AI-based intelligent camera decision-making system overcomes limitations in traditional surveillance methods, offering real-time analysis, quick decision-making, and continuous monitoring. The interdisciplinary approach makes it suitable for integration in police stations, empowering authorities with quick and authentic crime case information.
+## Integration with Kotlin Compose Multiplatform App and Firebase
 
-## Graphical Representation
+### Overview
 
-<img width="692" alt="Screenshot 2023-12-18 at 10 42 59 PM" src="https://github.com/rachit-goyal1071/RJPOLICE_HACK_694_Defenders_3/assets/119928941/f925966f-df28-4696-8161-a71ade0682ec">
+Integrate the AI surveillance system with a Kotlin Compose mobile application, utilizing Firebase for real-time data communication and sharing.
 
----
+### Features
 
-This README provides an overview of the AI-based system, its components, and the team's responsibilities. For a detailed guide on installation and usage, please refer to the project documentation.
+#### Real-time Notifications
+
+- Sends push notifications to police officers' devices when suspicious activities are detected.
+- Provides snapshot data from the AI surveillance system for immediate review.
+
+#### Location Coordinates
+
+- Embeds precise location coordinates within the notification, aiding officers in identifying the incident location.
+
+#### Emergency Services Integration
+
+- Allows officers to request emergency services (e.g., ambulance, fire brigade) through the Kotlin Compose app.
+- Includes a dedicated interface for officers to communicate and coordinate responses.
+
+#### Incident Logging and Reporting
+
+- Records incident details, including timestamps, AI snapshot images, and officer responses.
+- Provides an interface for officers to add additional notes and details.
+
+### How to Use
+
+1. **Clone Repository:**
+   ```bash
+   git clone https://github.com/your-username/ai-surveillance-system.git
+   ```
+
+<img width="870" alt="Screenshot 2024-01-17 at 5 53 59 PM" src="https://github.com/rachit-goyal1071/RJPOLICE_HACK_694_Defenders_3/assets/119928941/5d63d979-300a-4d6f-89a9-abaeada3d06e">
+
+## Crime Detection Model
+
+<img width="870" alt="Screenshot 2024-01-17 at 5 53 59 PM" src="https://github.com/rachit-goyal1071/RJPOLICE_HACK_694_Defenders_3/assets/119928941/e38b4691-f451-418a-ba0e-f61243c9cc0a">
+
+## Violence Detection Model
+
+<img width="870" alt="Screenshot 2024-01-17 at 5 53 59 PM" src="https://github.com/rachit-goyal1071/RJPOLICE_HACK_694_Defenders_3/assets/119928941/15ed8360-5fd9-4426-93e3-e395ef0edc5d">
+
+## App UI
+
+<img width="350" alt="Screenshot 2024-01-17 at 5 53 59 PM" src="https://github.com/rachit-goyal1071/RJPOLICE_HACK_694_Defenders_3/assets/119928941/3e28095d-736f-4fe8-951f-e774ac604c75">
+
+
