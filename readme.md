@@ -30,7 +30,7 @@ The system responds promptly to suspicious triggers, enhancing security measures
 
 The AI system autonomously examines video streams, eliminating the need for constant human intervention.
 
-## Integration with Kotlin Compose App and Firebase
+## Integration with Kotlin Compose Multiplatform App and Firebase
 
 ### Overview
 
@@ -73,5 +73,9 @@ Integrate the AI surveillance system with a Kotlin Compose mobile application, u
 ## Violence Detection Model
 
 <img width="870" alt="Screenshot 2024-01-17 at 5 53 59 PM" src="https://github.com/rachit-goyal1071/RJPOLICE_HACK_694_Defenders_3/assets/119928941/15ed8360-5fd9-4426-93e3-e395ef0edc5d">
+
+## App UI
+
+<img width="350" alt="Screenshot 2024-01-17 at 5 53 59 PM" src="https://github.com/rachit-goyal1071/RJPOLICE_HACK_694_Defenders_3/assets/119928941/3e28095d-736f-4fe8-951f-e774ac604c75">
 
 
