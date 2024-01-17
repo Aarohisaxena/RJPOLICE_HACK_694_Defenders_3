@@ -30,11 +30,39 @@ The system responds promptly to suspicious triggers, enhancing security measures
 
 The AI system autonomously examines video streams, eliminating the need for constant human intervention.
 
-## How to Use
+## Integration with Kotlin Compose App and Firebase
+
+### Overview
+
+Integrate the AI surveillance system with a Kotlin Compose mobile application, utilizing Firebase for real-time data communication and sharing.
+
+### Features
+
+#### Real-time Notifications
+
+- Sends push notifications to police officers' devices when suspicious activities are detected.
+- Provides snapshot data from the AI surveillance system for immediate review.
+
+#### Location Coordinates
+
+- Embeds precise location coordinates within the notification, aiding officers in identifying the incident location.
+
+#### Emergency Services Integration
+
+- Allows officers to request emergency services (e.g., ambulance, fire brigade) through the Kotlin Compose app.
+- Includes a dedicated interface for officers to communicate and coordinate responses.
+
+#### Incident Logging and Reporting
+
+- Records incident details, including timestamps, AI snapshot images, and officer responses.
+- Provides an interface for officers to add additional notes and details.
+
+### How to Use
 
 1. **Clone Repository:**
    ```bash
    git clone https://github.com/your-username/ai-surveillance-system.git
+   ```
 
 <img width="870" alt="Screenshot 2024-01-17 at 5 53 59 PM" src="https://github.com/rachit-goyal1071/RJPOLICE_HACK_694_Defenders_3/assets/119928941/5d63d979-300a-4d6f-89a9-abaeada3d06e">
 
