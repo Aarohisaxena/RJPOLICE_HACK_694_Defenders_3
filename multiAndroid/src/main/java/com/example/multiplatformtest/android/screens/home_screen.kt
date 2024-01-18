@@ -1,5 +1,7 @@
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
@@ -21,6 +23,7 @@ import com.example.multiplatformtest.android.screens.NotificationScreen
 import kotlinx.coroutines.launch
 
 
+@RequiresApi(Build.VERSION_CODES.P)
 @OptIn(ExperimentalMaterial3Api::class)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
@@ -119,8 +122,8 @@ fun HomeScreen() {
                         .fillMaxSize()
                         .padding(innerPadding)
                 ) {
-                    HospitalsList()
-//                    NotificationScreen()
+//                    HospitalsList()
+                    NotificationScreen()
 //                    Text("Hello, this is your main content with a custom drawer!")
                 }
             }
