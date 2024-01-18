@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.windowInsetsBottomHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -61,7 +62,9 @@ import com.example.multiplatformtest.android.theme.customColor
 fun HospitalsList() {
     val context = LocalContext.current
     LazyColumn(
-        modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.Start
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(top = 60.dp), horizontalAlignment = Alignment.Start
     ) {
         for (i in 1..10) {
             item {
@@ -72,13 +75,13 @@ fun HospitalsList() {
                         .padding(15.dp)
                         .shadow(5.dp, shape = RoundedCornerShape(10.dp))
                 ) {
-
                     Text(
-                        modifier = Modifier.padding(top = 10.dp, start = 20.dp),
+                        modifier = Modifier.padding(top = 10.dp, start = 20.dp, bottom = 5.dp),
                         text = "Rungta Hospital",
                         fontWeight = FontWeight.ExtraBold,
                         fontSize = 20.sp
                     )
+
                     Row(
                         horizontalArrangement = Arrangement.Center,
                         modifier = Modifier.fillMaxWidth()
@@ -109,7 +112,7 @@ fun HospitalsList() {
                         Button(colors = ButtonDefaults.buttonColors(containerColor = customColor.Vermilion),
                             shape = RoundedCornerShape(10.dp),
                             contentPadding = PaddingValues(start = 30.dp, end = 30.dp),
-                            onClick = { openDialer(context,"7017946250") }) {
+                            onClick = { openDialer(context, "7017946250") }) {
                             Icon(
                                 Icons.Default.Call,
                                 modifier = Modifier.size(20.dp),
